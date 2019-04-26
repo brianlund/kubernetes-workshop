@@ -19,15 +19,15 @@ Anything enclosed in `< >` must be edited before usage.
 
 *Launch a pod with the IAM role specified with iam.amazonaws.com/role: <arn>*
 
-	`kubectl apply -f deployment.yaml`
+`kubectl apply -f deployment.yaml`
 
 *Launch a service with a selector targeting the pod(s) in the deployment*
 
-	`kubectl apply -f service.yaml`
+`kubectl apply -f service.yaml`
 	
 *Launch an ingress resource to make the service available externally*
 
-	`kubectl apply -f ingress.yaml`
+`kubectl apply -f ingress.yaml`
 	
 
 Check the namespace resources with: `kubectl get all -n <yournamespace>`
