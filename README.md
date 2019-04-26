@@ -35,7 +35,7 @@ Check the namespace resources with: `kubectl get all -n <yournamespace>`
 Ensure all pods are in `STATUS Running`
 
 
-You can now access your service with the hostname you assigned `ingress.yaml`
+You can now access your service with the hostname you assigned in `ingress.yaml`
 
 
 ### Notes
