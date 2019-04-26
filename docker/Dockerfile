@@ -12,5 +12,5 @@ RUN apk add --update \
 ADD cmd.sh /
 RUN chmod a+x /cmd.sh
 
-# Download content to be served from specified source, you'll need to change this
+# Add content to be served from nginx
 CMD ["/cmd.sh"]
