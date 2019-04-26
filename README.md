@@ -43,6 +43,7 @@ You can now access your service with the hostname you assigned in `ingress.yaml`
 The role assigned in `deployment.yaml` needs a trust policy that allows it to be assumed by the kubernetes workers your pods run on. See [https://github.com/uswitch/kiam/blob/master/docs/IAM.md](https://github.com/uswitch/kiam/blob/master/docs/IAM.md)
 
 The image specified in `deployment.yaml` needs to be accessible to you, if you need an `imagePullSecret`to access it, then that secret must exist in your namespace. This is easily done by copying it from another namespace using
+
 `kubectl get secret dockerhub-secret --namespace=<source-namespace> --export -o yaml |\
    kubectl apply --namespace=<destination-namespace> -f -`
 
